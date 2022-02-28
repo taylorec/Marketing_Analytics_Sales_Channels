@@ -13,7 +13,7 @@ Grocery	= st.number_input("Customers annual spend on other groceries", min_value
 Detergents_Paper = st.number_input("Customers annual spend on detergent papers", min_value=1)
 Delicatessen = st.number_input("Customers annual spend on delicatessen", min_value=1)
 
-prediction = model.predict([[Fresh, Milk, Grocery, Detergents_Paper, Delicatessen]])
+prediction = model.predict([[Fresh, Milk, Grocery, Frozen, Detergents_Paper, Delicatessen]])
 
 if prediction == 0:
     prediction = 'Retail'
